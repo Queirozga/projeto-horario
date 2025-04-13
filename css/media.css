@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+    
+    body{
+        font-size: 2em;
+    }
+
+    p{
+        font-size: 16px
+    }
+
+    a:active {
+        color: #a4b2f0;
+        text-shadow: 2px 2px 5px black;
+        transition: color .2s ease-in-out;
+    }
+
+    a:hover{
+        display: none;
+    }
+
+   
+}
+
+@media screen and (max-width: 425px) {
+    
+    body{
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    a:active{
+        color: #a4b2f0;
+        text-shadow: 2px 2px 5px black;
+        transition: color .2s ease-in-out;
+    }
+
+    a:hover{
+        display: none;
+    }
+}
