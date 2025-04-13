@@ -1,6 +1,6 @@
 # projeto-horario
  
-Link do site: https://queirozga.github.io/projeto-horario/
+Link do site: https://queirozga.github.io/projeto-horario/ <br>
 Link de clone: https://github.com/Queirozga/projeto-horario.git
 
 Projeto básico que muda o horário exibido com base no dispositivo de usuário.
