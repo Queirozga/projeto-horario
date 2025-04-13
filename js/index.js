@@ -1,5 +1,7 @@
 let hoje = new Date();
 let hora = hoje.getHours();
+let minutos = hoje.getMinutes();
+let segundos = hoje.getSeconds();
 // hora = ;
 
 const corpo = document.body;
@@ -33,6 +35,6 @@ else if (hora >= 6 && hora < 8) {
 } else {
     alert('Hora inválida')
 }
-horario.innerHTML = `São ${hora} horas`;
+horario.innerHTML = `São ${hora}:${minutos}`;
 periodo.innerHTML = `${tempo}`;
 corpo.style.backgroundImage = fundo;
