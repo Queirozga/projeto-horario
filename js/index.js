@@ -38,11 +38,12 @@ else if (hora >= 6 && hora < 8) {
 }
 
 if (minutos < 10){
-    horario.innerHTML = `São ${hora}:0${minutos}`;
+    horario.innerHTML = `${hora}:0${minutos}`;
 } else {
-    horario.innerHTML = `São ${hora}:${minutos}`;
+    horario.innerHTML = `${hora}:${minutos}`;
 }
 periodo.innerHTML = `${tempo}`;
 corpo.style.backgroundImage = fundo;
 }
 mudar();
+

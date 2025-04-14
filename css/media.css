@@ -3,7 +3,7 @@
 @media screen and (max-width: 768px) {
     
     body{
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     p{
@@ -26,7 +26,7 @@
 @media screen and (max-width: 425px) {
     
     body{
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     p{
