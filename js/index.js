@@ -2,7 +2,7 @@ let hoje = new Date();
 let hora = hoje.getHours();
 let minutos = hoje.getMinutes();
 let segundos = hoje.getSeconds();
-// hora = ;
+// minutos = ;
 
 const corpo = document.body;
 const horario = document.querySelector('#horario');
@@ -10,6 +10,7 @@ const periodo = document.querySelector('#periodo');
 let tempo = '';
 let fundo = '';
 
+function mudar() {
 if (hora >= 24 || hora < 6) {
     tempo = 'Madrugada';
     fundo = "url('images/noite.jpg')";
@@ -35,6 +36,13 @@ else if (hora >= 6 && hora < 8) {
 } else {
     alert('Hora inválida')
 }
-horario.innerHTML = `São ${hora}:${minutos}`;
+
+if (minutos < 10){
+    horario.innerHTML = `São ${hora}:0${minutos}`;
+} else {
+    horario.innerHTML = `São ${hora}:${minutos}`;
+}
 periodo.innerHTML = `${tempo}`;
 corpo.style.backgroundImage = fundo;
+}
+mudar();
