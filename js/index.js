@@ -1,7 +1,3 @@
-let hoje = new Date();
-let hora = hoje.getHours();
-let minutos = hoje.getMinutes();
-let segundos = hoje.getSeconds();
 // minutos = ;
 
 const corpo = document.body;
@@ -11,6 +7,10 @@ let tempo = '';
 let fundo = '';
 
 function mudar() {
+    let hoje = new Date();
+    let hora = hoje.getHours();
+    let minutos = hoje.getMinutes();
+
 if (hora >= 24 || hora < 6) {
     tempo = 'Madrugada';
     fundo = "url('images/noite.jpg')";
@@ -46,4 +46,5 @@ periodo.innerHTML = `${tempo}`;
 corpo.style.backgroundImage = fundo;
 }
 mudar();
+window.setInterval(mudar, 1000);
 
